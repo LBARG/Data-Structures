@@ -1,9 +1,13 @@
 /* 
+
+
 This progrman is a static Queue structure implementation.
 Author: Luis Bernardo Ambrosi Rincón Gallardo.
 Version: 1.0.
 Date:04/09/2020
 Use with the header ColaEst.h
+
+
 */
 #include <stdio.h>
 #include <stdlib.h>
