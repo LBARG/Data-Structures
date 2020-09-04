@@ -6,10 +6,12 @@ Date:04/09/2020
 Use with the header ColaEst.h
 */
 #include <stdio.h>
+#include <stdlib.h>
 #include "ColaEst.h"
 
 int main(void) 
-{
+{	
+	
 	return 0;
 }
 
@@ -29,7 +31,7 @@ void queue(Queue *q, int elemento)
 	{
 		return;
 	}
-	else if(q->size <= 100)
+	else if(q->size < 100)
 	{
 		q->back--;
 		if(q->back == -1)
@@ -49,12 +51,13 @@ void queue(Queue *q, int elemento)
 int dequeue (Queue *q)
 {
 	int element = 0;
-	
+
 	if (q == NULL)
 	{
 		return;
 	}
-	else if(isEmpty == 0)
+	
+	else if(isEmpty(q) == 0)
 	{
 		element = q->data[q->front];
 		q->front--;
@@ -68,7 +71,7 @@ int dequeue (Queue *q)
 	}
 	else
 	{
-		printf("Is not possible to dequeue the element due the queue is empty");
+		printf("Is not possible to dequeue the element due the queue is empty\n");
 		return;
 	}
 }
@@ -133,3 +136,4 @@ void destroy(Queue *q)
 	}
 	inizialize(q);
 }
+
