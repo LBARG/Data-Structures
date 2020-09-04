@@ -1,4 +1,4 @@
-
+/*Header for the implementation of a Stack structure*/
 
 typedef struct Elemento
 {
