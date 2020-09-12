@@ -1,4 +1,5 @@
 /*Header for a Queue Structure*/
+
 #ifndef __COLAEST_H__
 #define __COLAEST_H__
 
