@@ -1,4 +1,10 @@
 /*Header for a Queue Structure*/
+#ifndef __COLAEST_H__
+#define __COLAEST_H__
+
+const int MAX_SIZE = 100;
+
+#include <stdio.h>
 
 typedef struct Queue
 {
@@ -8,11 +14,14 @@ typedef struct Queue
 	int size;
 }Queue;
 
-void inizialize(Queue *q);
-void queue(Queue *q, int elemento);
-int dequeue (Queue *q);
-int isEmpty(Queue *q);
-int front(Queue *q);
-int back(Queue *q);
-int size(Queue *q);
-void destroy(Queue *q);
+void inizialize(Queue *);
+void queue(Queue *, int);
+int dequeue (Queue *);
+int isEmpty(Queue *);
+int front(Queue *);
+int back(Queue *);
+int size(Queue *);
+void destroy(Queue *);
+void show(Queue *);
+
+#endif
