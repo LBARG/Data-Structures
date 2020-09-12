@@ -1,12 +1,24 @@
 /* 
 
 This progrman is a static Queue structure implementation.
+<<<<<<< HEAD
 Author: Luis Bernardo Ambrosi Rincón Gallardo.
 Version: 2.0.
 Date:12/09/2020
 Use with the header ColaEst.h
 
 */
+=======
+Author: Luis Bernardo Ambrosi RincÃ³n Gallardo.
+Version: 1.0.
+Date:04/09/2020
+Use with the header ColaEst.h
+
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+>>>>>>> 622ebf46dd9d420bc9c13b38e83c83a78906e23a
 #include "ColaEst.h"
 #include <errno.h>
 
@@ -40,7 +52,11 @@ void queue(Queue *q, int elemento)
 		errno = EFAULT;
 		return;
 	}
+<<<<<<< HEAD
 	else
+=======
+	else if(q->size < 100)
+>>>>>>> 622ebf46dd9d420bc9c13b38e83c83a78906e23a
 	{
 		if(q->size < MAX_SIZE)
 		{
@@ -71,7 +87,11 @@ int dequeue (Queue *q)
 		return;
 	}
 	
+<<<<<<< HEAD
 	else
+=======
+	else if(isEmpty(q) == 0)
+>>>>>>> 622ebf46dd9d420bc9c13b38e83c83a78906e23a
 	{
 		if(isEmpty(q) == 0)
 		{
@@ -83,6 +103,7 @@ int dequeue (Queue *q)
 				q->front = MAX_SIZE-1;
 			}
 		
+<<<<<<< HEAD
 			return element;
 		}
 	
@@ -91,6 +112,14 @@ int dequeue (Queue *q)
 			errno = EIO;
 			return;
 		}
+=======
+		return element;
+	}
+	else
+	{
+		printf("Is not possible to dequeue the element due the queue is empty\n");
+		return;
+>>>>>>> 622ebf46dd9d420bc9c13b38e83c83a78906e23a
 	}
 }
 

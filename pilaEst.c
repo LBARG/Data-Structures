@@ -1,3 +1,9 @@
+/*
+Implementation of a Static Stack Structure
+Author: Luis Bernardo Ambrosi Rincón Gallardo
+Date:04/09/2020
+apply the header pilaEst.h at the complile time to use the program above
+*/
 #include <stdio.h>
 #include "pilaEst.h"
 
