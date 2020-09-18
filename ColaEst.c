@@ -187,10 +187,19 @@ void show (Queue *q)
 		{
 			int aux, i;
 			aux = q->front;
-			for(i = 0;i < q->size-1;i++)
+			for(i = 0;i < q->size;i++)
 			{
-				printf("%d", q->data[aux--]);
+				printf("%d", q->data[aux]);
+				aux--;
+				if(aux<0)
+				{
+					aux = MAX_SIZE-1;
+				}
 			}
 		}
 	}
 }
+	
+	
+	
+	
