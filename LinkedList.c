@@ -1,7 +1,7 @@
 /* 
 This progrman is a simply linked list structure implementation.
-Author: Luis Bernardo Ambrosi Rincón Gallardo.
-Version: 1.0
+Author: Luis Bernardo Ambrosi RincÃ³n Gallardo.
+Version: 1.1
 Date:13/09/2020
 Use with the header LinkedList.h
 */
@@ -15,8 +15,6 @@ Use with the header LinkedList.h
 */
 
 
-	return 0;
-}
 
 
 void initialize(List *l)
