@@ -9,7 +9,6 @@ Use with the header LinkedList.h
 
 #include "Linked_List.h"
 #include <errno.h>
-#include <string.h>
 
 /* 
 	List is Empty = EIO
@@ -37,7 +36,7 @@ int main(void)
 		{
 			char * element;
 			element = (char *)malloc(sizeof(char));
-			printf("Insert an integer number:\n");
+			printf("Insert a Node in List:\n");
 			scanf("%s",element);
 			printf("\n");
 			insert(l,element);
