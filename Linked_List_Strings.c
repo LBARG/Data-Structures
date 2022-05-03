@@ -1,9 +1,9 @@
 /* 
-This progrman is a simply linked list structure implementation with integers.
+This progrman is a simply linked list structure implementation with Strings.
 The addition and the elimination of one element are made in the begining of the list.
 Author: Luis Bernardo Ambrosi Rincón Gallardo.
 Version: 1.0
-Date:13/09/2020
+Date:05/3/2022
 Use with the header LinkedList.h
 */
 
